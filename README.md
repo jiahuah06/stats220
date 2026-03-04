@@ -13,7 +13,7 @@ This is my repo for **STATS 220**.
 2. Cooking something that I could enjoy
 3. Coding and using what i have learnt
 
-Here is spotify playlist:
+Here is my spotify playlist:
 [Spotify](https://open.spotify.com/playlist/50nvCws8Sb9gzGPLmgGK7r)
 
 A meme that captures how I currently feel about my university studies is ![](https://media.tenor.com/M1pYN74hQZEAAAAM/university-hannah-golden.gif)

@@ -8,7 +8,7 @@ This is my repo for **STATS 220**.
 * I am taking **STATS 220** as i'm double majoring and this just made sence.
 * I am interested in learning about R code and potientially using it for my own projects in the future.
 
-### A few thing that interest me
+### A few thing that interest me:
 1. Hiking and taking photo along the way
 2. Cooking something that I could enjoy
 3. Coding and using what i have learnt

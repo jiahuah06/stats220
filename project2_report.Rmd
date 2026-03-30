@@ -1,0 +1,61 @@
+---
+title: "Project 2"
+output: html_document
+subtitle: "STATS 220 Semester One, 2026"
+date: "2026-03-30"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{css}
+body {
+  background-color: #808080;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  color: #FFFFFF;
+}
+h3 {
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+h4 {
+  text-align: center;
+  color: #FFFFFF;
+}
+p {
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+```
+
+## Introduction
+
+## Dynamic report
+
+## Creativity
+
+## Learning reflection
+
+## Appendix
+
+
+```{r file='exploration.R', eval=FALSE, echo=TRUE}
+
+```
+```{r file='dynamic_report.Rmd', eval=FALSE, echo=TRUE}
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

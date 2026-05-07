@@ -30,9 +30,9 @@ logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSNQ_Q2
 
 # Rename variables
 latest_data <- logged_data %>%
-  rename(cost = 'How much did you spend on lunch today?',
-         location = 'Where did you get your lunch?',
-         time = 'What time did you have lunch?')
+  rename(cost = 2,
+         location = 3,
+         time = 4)
 
 # Summary values
 avg_cost <- mean(latest_data$cost)

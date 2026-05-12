@@ -1,0 +1,96 @@
+---
+title: Lunch Spending at UOA
+author: Jiahua Huang 
+output: html_document
+---
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+```{js}
+$(function() {
+  $(".level2").css('visibility', 'hidden');
+  $(".level2").first().css('visibility', 'visible');
+  $(".container-fluid").height($(".container-fluid").height() + 300);
+  $(window).on('scroll', function() {
+    $('h2').each(function() {
+      var h2Top = $(this).offset().top - $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (h2Top >= 0 && h2Top <= windowHeight / 2) {
+        $(this).parent('div').css('visibility', 'visible');
+      } else if (h2Top > windowHeight / 2) {
+        $(this).parent('div').css('visibility', 'hidden');
+      }
+    });
+  });
+})
+```
+
+```{css}
+.figcaption {display: none}
+
+body {
+  background-color: #ece2f0;
+  color: #02818a;
+}
+
+h1 {
+  color: #016c59;
+}
+
+h2 {
+  color: #016c59;
+}
+
+```
+## Student Lunch Spending Story
+
+This visual story explores how student lunch spending changes depending on weekdays, meal types, and where student get lunches. The data was collected through observational logging using a Google Form.
+
+## Spending Categories
+
+Lunches are split into 3 categories based on their price: expensive(more than $20), moderate(less than $20), cheap(less than $10).
+![Bar chart showing distribution of spending categories](plot1.png)
+A surprisingly large number of students fall into the expensive spending category, while fewer students consistently purchase cheap lunches.
+
+This suggests that many students are willing to spend a relatively high amount on lunch.
+
+## Spending Across Weekdays
+
+Average lunch spending changes slightly throughout the week.
+
+![Line graph showing average spending across weekdays](plot2.png)
+Generally, a weekday appear to have higher average spending than weekend This may be caused by student choosing to eat at home during the weekend.
+
+## Do Spending Habits Change Across Weekdays?
+
+Looking at the proportions of cheap, moderate, and expensive lunches across weekdays shows a more detailed pattern.
+
+![Proportional bar chart showing spending types across weekdays](plot3.png)
+Some weekdays like Monday contain larger proportions of expensive lunches, while other days like Sunday dominated by cheaper or more moderate spending choices. This is consistent with the previous graph so there is some evidence that students spends more on lunches during a weekday compare to the weekend
+
+## Do Rice Meals Affect Spending?
+
+This boxplot compares spending for rice meals and non-rice meals.
+
+![Boxplot comparing spending between rice and non-rice meals](plot4.png)
+Rice meals appear to have a lower average spending compared with non-rice meals while having less variation.
+
+## Lunch Source and Spending
+
+This visualisation compares spending distributions based on where students obtained lunch.
+
+![Boxplot and jitter plot showing spending by lunch source](plot5.png)
+Lunch source has a strong relationship with spending. Some lunch sources show much larger variation and higher spending values than others. The jittered points help reveal individual spending observations. 
+
+## Conclusion
+
+Overall, the data suggests that lunch spending is influenced by multiple factors including weekday, food type, and lunch source. Visualising the data makes these patterns easier to identify and communicate.
+
+
+
+
